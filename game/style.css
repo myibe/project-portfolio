@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 2px solid black;
+    margin : auto;
+}
+
+#character {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/heart.jpg);
+    background-size: 50px 50px;
+    position: relative;
+    top: 130px;
+
+
+}
+
+.animate {
+    animation: jump 500ms ;
+}
+@keyframes jump {
+    0%{top: 140px;}
+    30%{top: 100px;}
+    70%{top: 90px;}
+    100%{top: 150px;}
+}
+
+#block {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/knife.jpeg);
+    background-size: 50px 50px;
+    position: relative;
+    top: 90px;
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0%{left:480px;}
+    100%{left:-40px;}
+
+}
+
+p{
+    text-align: center;
+}
